@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{article.title}}{% endblock %}
+
+{% block image %}{{ asset('img/'~article.picture) }}{% endblock %}
+
+{% block titre %}{{article.title}}{% endblock %}
+
+{% block body %}
+
+<p>{{article.content}}</p>
+
+{% endblock %}
+
+
